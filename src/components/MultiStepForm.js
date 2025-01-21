@@ -17,6 +17,7 @@ const MultiStepForm = () => {
     password: "",
     confirmPassword: "",
     dateOfBirth: "",
+    picture: "",
   });
   const Step = [StepOne, StepTwo, StepThree, FormFinished][currentStep];
 
