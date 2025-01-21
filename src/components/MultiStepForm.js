@@ -25,9 +25,7 @@ const MultiStepForm = () => {
   const handleBackStep = () => setCurrentStep((currentStep) => currentStep - 1);
 
   return (
-    <div>
-      <Step handleBackStep={handleBackStep} handleNextStep={handleNextStep} />
-    </div>
+    <Step handleBackStep={handleBackStep} handleNextStep={handleNextStep} />
   );
 };
 

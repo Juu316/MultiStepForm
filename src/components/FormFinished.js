@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const FormFinished = () => {
   return (
@@ -8,4 +8,4 @@ const FormFinished = () => {
   )
 }
 
-export default FormFinished
+export default FormFinished;
