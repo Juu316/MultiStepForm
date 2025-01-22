@@ -8,7 +8,7 @@ import FormFinished from "./FormFinished";
 import { motion } from "motion/react";
 const MultiStepForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [formError, setFormError]= useState();
+  const [formError, setFormError] = useState();
   const [formValue, setFormValue] = useState({
     firstName: "",
     lastName: "",
@@ -21,17 +21,30 @@ const MultiStepForm = () => {
     picture: "",
   });
   const Step = [StepOne, StepTwo, StepThree, FormFinished][currentStep];
- const handleError = (errors)=>{
-setFormError((prev)=>{
+  const handleError = (errors) => {
+    setFormError((prev) => {});
+  };
+  let isValid = true;
+  const handleNextStep = () => {
+    if (isValid) {
+      setCurrentStep((currentStep) => currentStep + 1);
+    }
+  };
 
-})}
-
-  const handleNextStep = () => setCurrentStep((currentStep) => currentStep + 1);
-
-  const handleBackStep = () => setCurrentStep((currentStep) => currentStep - 1);
+  const handleBackStep = () => {
+    if (isValid) {
+      setCurrentStep((currentStep) => currentStep - 1);
+    }
+  };
 
   return (
-    <Step formValue={formValue} setFormValue={setFormValue}   handleBackStep={handleBackStep} handleNextStep={handleNextStep} handleError={handleError}/>
+    <Step
+      formValue={formValue}
+      setFormValue={setFormValue}
+      handleBackStep={handleBackStep}
+      handleNextStep={handleNextStep}
+      handleError={handleError}
+    />
   );
 };
 
