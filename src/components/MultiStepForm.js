@@ -5,10 +5,20 @@ import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 import FormFinished from "./FormFinished";
-import { motion } from "motion/react";
+
 const MultiStepForm = () => {
   const [currentStep, setCurrentStep] = useState(0);
-  const [formError, setFormError] = useState();
+  const [formError, setFormError] = useState({
+    firstName: "",
+    lastName: "",
+    userName: "",
+    email: "",
+    phoneNumber: "",
+    password: "",
+    confirmPassword: "",
+    dateOfBirth: "",
+    picture: "",
+  });
   const [formValue, setFormValue] = useState({
     firstName: "",
     lastName: "",
@@ -22,7 +32,10 @@ const MultiStepForm = () => {
   });
   const Step = [StepOne, StepTwo, StepThree, FormFinished][currentStep];
   const handleError = (errors) => {
-    setFormError((prev) => {});
+    setFormError((prev) => ({
+      ...prev,
+      ...errors,
+    }));
   };
   let isValid = true;
   const handleNextStep = () => {
@@ -44,11 +57,10 @@ const MultiStepForm = () => {
       handleBackStep={handleBackStep}
       handleNextStep={handleNextStep}
       handleError={handleError}
+      error={formError}
     />
   );
 };
 
 export default MultiStepForm;
-export function Component({ isVisible }) {
-  return <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />;
-}
+

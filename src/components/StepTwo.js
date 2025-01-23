@@ -12,10 +12,10 @@ const StepTwo = (props) => {
             width="60"
             height="60"
             src="images/pineconeLogo.png"></img>
-          <h2 class="inter text-[26px] text-foreground font-semibold">
+          <h2 className="inter text-[26px] text-foreground font-semibold">
             Join Us! 😎
           </h2>
-          <p class="inter font-medium text-[18px] whitespace-nowrap text-[#8E8E8E]">
+          <p className="inter font-medium text-[18px] whitespace-nowrap text-[#8E8E8E]">
             Please provide all current information accurately.
           </p>
         </div>
@@ -40,6 +40,7 @@ const StepTwo = (props) => {
         
           <div className="inter">Password <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
+          type="password"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             placeholder="Your password"
             onChange={(e) => {
@@ -49,6 +50,7 @@ const StepTwo = (props) => {
         
           <div className="inter">Confirm password <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
+          type="password"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             placeholder="Confirm your password"
             onChange={(e) => {
