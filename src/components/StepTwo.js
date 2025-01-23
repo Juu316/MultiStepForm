@@ -20,7 +20,7 @@ const StepTwo = (props) => {
           </p>
         </div>
         
-          <div className="inter">Email <span className="text-[rgb(225,73,66)]">*</span></div>
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">Email <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             placeholder="Your email"
@@ -29,7 +29,7 @@ const StepTwo = (props) => {
             }}></input>
         
         
-          <div className="inter">Phone number <span className="text-[rgb(225,73,66)]">*</span></div>
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">Phone number <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             placeholder="Your phone number"
@@ -38,7 +38,7 @@ const StepTwo = (props) => {
             }}></input>
         
         
-          <div className="inter">Password <span className="text-[rgb(225,73,66)]">*</span></div>
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">Password <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
           type="password"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
@@ -48,7 +48,7 @@ const StepTwo = (props) => {
             }}></input>
         
         
-          <div className="inter">Confirm password <span className="text-[rgb(225,73,66)]">*</span></div>
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">Confirm password <span className="text-[rgb(225,73,66)]">*</span></div>
           <input
           type="password"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"

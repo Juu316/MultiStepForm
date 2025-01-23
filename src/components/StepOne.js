@@ -21,7 +21,7 @@ const StepOne = (props) => {
 
   return (
     <div className="flex justify-center items-center max-h-screen h-screen">
-      <div className="bg-[#FFF] flex flex-col items-start shrink-0 rounded-[8px] w-[480px] h-[655px] p-[32px] ">
+      <div className="bg-[#FFF] flex flex-col justify-between  items-start shrink-0 rounded-[8px] w-[480px] h-[655px] p-[32px] ">
         <div className="mb-7 space-y-2">
           <img
             alt="Pinecone logo"
@@ -31,12 +31,12 @@ const StepOne = (props) => {
           <h2 className="inter text-[26px] text-foreground font-semibold">
             Join Us! 😎
           </h2>
-          <p className="inter font-medium text-[18px] whitespace-nowrap text-[#8E8E8E]">
+          <p className="inter text-[18px] whitespace-nowrap text-[#8E8E8E]">
             Please provide all current information accurately.
           </p>
-        </div>
-
-        <div className="inter">
+          </div>
+<div className="flex flex-col flex-grow gap-y-3 w-full">
+        <div className="inter text-sm font-semibold leading-4 text-[#334155]">
           First name <span className="text-[rgb(225,73,66)]">*</span>
         </div>
         <input
@@ -47,8 +47,8 @@ const StepOne = (props) => {
             setFormValue({ ...formValue, firstName: e.target.value });
           }}
         />
-        {error && <p className="inter text-[#e14942]">First name cannot contain special characters or numbers.</p>}
-        <div className="inter ">
+        {/* {error && <p className="inter text-[#e14942]">First name cannot contain special characters or numbers.</p>} */}
+        <div className="inter text-sm font-semibold leading-4 text-[#334155]">
           Last name <span className="text-[rgb(225,73,66)]">*</span>
         </div>
         <input
@@ -58,7 +58,7 @@ const StepOne = (props) => {
             setFormValue({ ...formValue, lastName: e.target.value });
           }}
         />
-        <div className="inter">
+        <div className="inter text-sm font-semibold leading-4 text-[#334155]">
           Username <span className="text-[rgb(225,73,66)]">*</span>
         </div>
         <input
@@ -85,6 +85,7 @@ const StepOne = (props) => {
             />
           </svg>
         </button>
+        </div>
       </div>
     </div>
   );

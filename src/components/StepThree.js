@@ -18,7 +18,7 @@ const StepThree = (props) => {
             Please provide all current information accurately.
           </p>
 
-          <div className="inter">
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">
             Date of birth <span className="text-[rgb(225,73,66)]">*</span>
           </div>
           <input 
@@ -30,7 +30,7 @@ const StepThree = (props) => {
             }}
           />
 
-          <div className="inter">
+          <div className="inter text-sm font-semibold leading-4 text-[#334155]">
             Profile image <span className="text-[rgb(225,73,66)]">*</span>
           </div>
           <input 
