@@ -4,7 +4,7 @@ const StepThree = (props) => {
   const { handleBackStep, handleNextStep, setFormValue, formValue } = props;
   return (
     <div className="flex justify-center items-center max-h-screen h-screen">
-      <div className="bg-[#FFF] flex flex-col items-start shrink-0 rounded-[8px] w-[480px] h-[655px] p-[32px] ">
+      <div className="bg-[#FFF] flex flex-col justify-between items-start shrink-0 rounded-[8px] w-[480px] h-[655px] p-[32px] ">
         <div className="mb-7 space-y-2">
           <img
             alt="Pinecone logo"
@@ -21,7 +21,7 @@ const StepThree = (props) => {
           <div className="inter text-sm font-semibold leading-4 text-[#334155]">
             Date of birth <span className="text-[rgb(225,73,66)]">*</span>
           </div>
-          <input 
+          <input
             type="date"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             onChange={(e) => {
@@ -33,7 +33,7 @@ const StepThree = (props) => {
           <div className="inter text-sm font-semibold leading-4 text-[#334155]">
             Profile image <span className="text-[rgb(225,73,66)]">*</span>
           </div>
-          <input 
+          <input
             type="file"
             className="inter w-full p-3 text-base leading-5 rounded-md outline outline-[#CBD5E1] focus:outline-[#0CA5E9] text-[#121316]"
             onChange={(e) => {
@@ -43,16 +43,16 @@ const StepThree = (props) => {
           />
         </div>
 
-        <div className="flex w-full">
+        <div className="flex gap-x-2 w-full">
           <button
-            className="inter flex items-center justify-center w-32 gap-x-3 rounded-md border border-[#CBD5E1] transition-all duration-300 hover:bg-gray-100"
+            className="inter flex items-center justify-center w-[128px] py-[10px] px-[12px] bg-white shrink-0 rounded-[6px] border border-[#CBD5E1] transition-all duration-300 hover:bg-gray-100"
             onClick={handleBackStep}>
             <svg
+              xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+              fill="none">
               <path
                 d="M15.705 7.41L14.295 6L8.29501 12L14.295 18L15.705 16.59L11.125 12L15.705 7.41Z"
                 fill="#202124"
