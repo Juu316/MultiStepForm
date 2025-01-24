@@ -19,6 +19,7 @@ const StepOne = (props) => {
   };
 
   return (
+    
     <div className="flex justify-center items-center max-h-screen h-screen">
       <div className="bg-[#FFF] flex flex-col justify-between items-start shrink-0 rounded-[8px] w-[480px] h-[655px] p-[32px] ">
         <div className="mb-7 space-y-2">
@@ -86,10 +87,9 @@ const StepOne = (props) => {
         </button>
       </div>
     </div>
+   
   );
 };
 
 export default StepOne;
-export function Component({ isVisible }) {
-  return <motion.div animate={{ opacity: isVisible ? 1 : 0 }} />;
-}
+
