@@ -53,16 +53,7 @@ const MultiStepForm = () => {
 
 
 
-
-
-
-
-
-
-
   let stringData = JSON.stringify({formValue});
-
-
   localStorage.setItem(
     "formData",
     stringData
@@ -85,24 +76,12 @@ let dataObj = JSON.parse(dataText);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   const animationVariants = { 
     enter: {opacity: 0, x: 0},
     center: {opacity: 1, x: 0},
     exit: {opacity: 0, x: 0},
   };
-  return (
+  return (  
     <div className="flex items-center justify-center bg-[#F4F4F4] w-screen h-screen">
       <AnimatePresence exitBeforeEnter>
 
@@ -110,7 +89,6 @@ let dataObj = JSON.parse(dataText);
           key={currentStep}
           initial="enter"
           animate="center"
-         
          variants={animationVariants}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="w-[480px] h-[655px] bg-[#FFF] rounded-lg flex flex-col items-center justify-center"

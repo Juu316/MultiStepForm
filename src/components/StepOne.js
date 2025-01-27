@@ -1,6 +1,6 @@
 import React from "react";
 import { isStepOneValid } from "@/utils/stepOneValidation";
-import { motion } from "motion/react";
+
 const StepOne = (props) => {
   const { handleNextStep, setFormValue, formValue, handleError, error } = props;
 
@@ -15,7 +15,6 @@ const StepOne = (props) => {
       handleNextStep();
     }
     handleError(errors);
-    //error
   };
 
   return (

@@ -2,8 +2,7 @@ import React from "react";
 
 const FormFinished = () => {
   return (
-    <div className="flex justify-center items-center max-h-screen h-screen">
-      
+    
       <div className="space-y-2 bg-white rounded-lg w-[480px] p-8">
         <img
           alt="pinecone logo"
@@ -17,7 +16,7 @@ const FormFinished = () => {
           We've received your submission. Thank you!
         </p>
       </div>
-    </div>
+    
   );
 };
 
